@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e07a469611edaa94795ef702a3511c14
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - ambientClip: {fileID: 8300000, guid: e2944f873ac9b314a9e579534205ab73, type: 3}
+  - musicClip: {fileID: 8300000, guid: 23694b6d9bc8443468bb6e481b34a9c0, type: 3}
+  - scarecrowClip: {fileID: 8300000, guid: 6ed8ba25332621f4ca228f7fc540be5a, type: 3}
+  - riverClip: {fileID: 8300000, guid: 9fa6a8a6a03c8d84997586106d48a408, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
