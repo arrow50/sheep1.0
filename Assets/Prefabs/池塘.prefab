@@ -256,7 +256,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 303f6d85edfc4d04bb22a6759eb460c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pondSheep: {fileID: 0}
+  pondSheepRed: {fileID: 0}
+  pondSheepBlue: {fileID: 0}
   particle: {fileID: 8807117743224330893}
 --- !u!1 &7884961206008267460
 GameObject:

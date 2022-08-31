@@ -6,7 +6,13 @@ Shader "Toon/Lit" {
 	}
 
 	SubShader {
-		Tags { "RenderType"="Opaque" }
+		Tags
+            {
+                "RenderPipeline"="UniversalPipeline"
+                "RenderType"="Opaque"
+                "UniversalMaterialType" = "Unlit"
+                "Queue"="Geometry"
+            }
 		LOD 200
 		
 CGPROGRAM
