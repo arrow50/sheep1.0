@@ -45,8 +45,8 @@ GameObject:
   - component: {fileID: 6421607357235908033}
   - component: {fileID: 2023255039813718797}
   - component: {fileID: 7641629964649490186}
-  - component: {fileID: 4416606366853841525}
   - component: {fileID: 2855380702432930775}
+  - component: {fileID: 7066507849088660622}
   m_Layer: 0
   m_Name: Scarecrow_02.002
   m_TagString: Ball
@@ -62,9 +62,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4574116590336374479}
   m_LocalRotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.02, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -0, y: -0.9, z: 0}
+  m_LocalScale: {x: 150, y: 150, z: 150}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7028497001823417479}
   m_Father: {fileID: 3439209539962661977}
@@ -128,7 +128,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4574116590336374479}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0.2
   m_AngularDrag: 0.2
   m_UseGravity: 1
@@ -136,20 +136,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &4416606366853841525
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4574116590336374479}
-  m_Material: {fileID: 13400000, guid: 3aeb7dadc0c69d54d9e5777e9d5631f1, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1712350126120486099, guid: 492dcd41776efba48841473b677153fb, type: 3}
 --- !u!114 &2855380702432930775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,6 +148,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ff670f5730d72e40a032d0d7c7b77b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &7066507849088660622
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4574116590336374479}
+  m_Material: {fileID: 13400000, guid: 3aeb7dadc0c69d54d9e5777e9d5631f1, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.0018986036
+  m_Center: {x: 0.0000014217803, y: 0.019551044, z: 9.8953e-10}
 --- !u!1 &8661857427030209608
 GameObject:
   m_ObjectHideFlags: 0

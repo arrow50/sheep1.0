@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4924018987665974638}
   - component: {fileID: 7178838473663339497}
   - component: {fileID: 239095624458805995}
-  - component: {fileID: 5142589931691777217}
   - component: {fileID: 6891922341372876607}
+  - component: {fileID: 5264203620869130656}
   m_Layer: 0
   m_Name: WicketDoor_03_A.003
   m_TagString: Untagged
@@ -98,24 +98,10 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &5142589931691777217
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 136929492204413048}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5406915296757092337, guid: f080a9a0a0775c84498c7fb1af8789a3, type: 3}
 --- !u!114 &6891922341372876607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,6 +114,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffe5f3172a93bd44a9e1bbb2fe50a618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorLock: {fileID: 1243296761357819400}
+--- !u!65 &5264203620869130656
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136929492204413048}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0010876702, y: 0.0058311266, z: 0.007765839}
+  m_Center: {x: -0.0004378999, y: 0.000011878196, z: 0.000008521097}
 --- !u!1 &1243296761357819400
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 7345921211990086413}
   - component: {fileID: 5354325529959728572}
   - component: {fileID: 5267797080445313962}
-  - component: {fileID: 2416467772284657624}
+  - component: {fileID: 7798606598384231949}
   m_Layer: 0
   m_Name: lock
   m_TagString: Untagged
@@ -226,6 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffe5f3172a93bd44a9e1bbb2fe50a618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorLock: {fileID: 1243296761357819400}
 --- !u!54 &5267797080445313962
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -238,12 +239,12 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &2416467772284657624
-MeshCollider:
+--- !u!65 &7798606598384231949
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -252,10 +253,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7434527051930761011, guid: f080a9a0a0775c84498c7fb1af8789a3, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.00085917587, y: 0.00091177336, z: 0.0010976356}
+  m_Center: {x: -0.000055348755, y: 0.0000005051122, z: -0.00018584589}
 --- !u!1 &4636396436316720329
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,8 +430,8 @@ GameObject:
   - component: {fileID: 4375978375581283620}
   - component: {fileID: 4432656349519292800}
   - component: {fileID: 5377751994016784949}
-  - component: {fileID: 5022306410191887393}
   - component: {fileID: 6532424303969304928}
+  - component: {fileID: 8223118305012517182}
   m_Layer: 0
   m_Name: WicketDoor_03_A.001
   m_TagString: Untagged
@@ -516,24 +516,10 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &5022306410191887393
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8524092851935826967}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6981334668375041255, guid: f080a9a0a0775c84498c7fb1af8789a3, type: 3}
 --- !u!114 &6532424303969304928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -546,3 +532,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffe5f3172a93bd44a9e1bbb2fe50a618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorLock: {fileID: 0}
+--- !u!65 &8223118305012517182
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8524092851935826967}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0011303419, y: 0.0071610757, z: 0.007765839}
+  m_Center: {x: -0.000459235, y: 0.00067685277, z: 0.000008521514}

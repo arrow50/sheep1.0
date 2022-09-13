@@ -36,9 +36,10 @@ public class soccerDetect : MonoBehaviour
                 //StartCoroutine("Delay");//开始协程
                 pondSheepBlue.SetActive(true);
                 life-=1;
+            }
 
 
-                if(collision.gameObject.tag == "BallRed")
+            if(collision.gameObject.tag == "BallRed")
             {
                 
                 print("进红球了！");
@@ -58,4 +59,4 @@ public class soccerDetect : MonoBehaviour
     }
 
 }
-}
+

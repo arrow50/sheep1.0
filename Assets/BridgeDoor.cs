@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-[RequireComponent(typeof(Rigidbody))]
-[RequireComponent(typeof(MeshCollider))]
 
 public class BridgeDoor : MonoBehaviour
 {
     private Rigidbody rb;
-    private MeshCollider col;
+    private Collider col;
+    public GameObject doorLock;
     
     void Start()
     {
@@ -15,8 +14,8 @@ public class BridgeDoor : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.isKinematic = true;
 
-        col = GetComponent<MeshCollider>();
-        col.convex = true;
+        col = GetComponent<Collider>();
+        //col.convex = true;
     }
 
    
@@ -32,6 +31,7 @@ public class BridgeDoor : MonoBehaviour
                 print("人满了！");
                 rb.isKinematic = false;
                 //Destroy(collision.gameObject);
+                doorLock.GetComponent<Rigidbody>().isKinematic = false;
             }
         }
 
